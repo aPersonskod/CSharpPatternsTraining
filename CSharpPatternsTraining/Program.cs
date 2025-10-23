@@ -5,6 +5,7 @@ using CSharpPatternsTraining.Patterns;
 var factory = new FactoryClass();
 //Console.WriteLine(factory.Result);
 //var observer = new ObserverClass();
-var di = new DependencyInjectionClass();
+/*var di = new DependencyInjectionClass();
 di.Run1();
-di.Run2();
+di.Run2();*/
+var builderClass = new BuilderClass();
