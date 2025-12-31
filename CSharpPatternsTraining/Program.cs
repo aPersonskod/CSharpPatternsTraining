@@ -1,20 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using CSharpPatternsTraining.Another;
 using CSharpPatternsTraining.Patterns;
 
-var projectRunnner = new ProjectRunner();
-projectRunnner.Builder();
+var languageFeatures = new LanguageFeatures();
+
+/*var projectRunnner = new ProjectRunner();
+projectRunnner.Builder();*/
 
 public class ProjectRunner
 {
-    public void CoContrVariativity()
-    {
-        var variativity = new CoContrVariativity();
-        variativity.Covariativity();
-        variativity.Contrvariativity();
-        variativity.Invariativity();
-    }
-
     public void Factory()
     {
         var factory = new FactoryClass();

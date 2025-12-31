@@ -1,4 +1,6 @@
-namespace CSharpPatternsTraining.Patterns;
+using CSharpPatternsTraining.Another.Model;
+
+namespace CSharpPatternsTraining.Another.Opportunities;
 
 public class CoContrVariativity
 {
@@ -29,10 +31,6 @@ public class CoContrVariativity
         IGarage<Ford> fordGarage = new Garage<Ford>((new Car() as Ford)!);
     }
 }
-
-internal class Car { }
-internal class Ford : Car { }
-internal class FordMustang : Ford { }
 
 internal interface IGarage<T>
 {
