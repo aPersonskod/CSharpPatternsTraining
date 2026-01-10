@@ -1,4 +1,4 @@
-namespace CSharpPatternsTraining.Another.Model;
+namespace TestProject.Opportunities.Model;
 
 public class Account(int sum)
 {

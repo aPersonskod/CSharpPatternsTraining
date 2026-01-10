@@ -1,15 +1,11 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace CSharpPatternsTraining.Patterns;
+namespace TestProject.Patterns;
 
-public class DependencyInjectionClass
+public class DependencyInjectionTest
 {
-    public DependencyInjectionClass()
-    {
-
-    }
-
-    public void Run1()
+    [Test]
+    public void DiRun1()
     {
         var logger = new Logger(new DefaultLogService());
         logger.Log("Hello World!");
@@ -17,7 +13,8 @@ public class DependencyInjectionClass
         logger.Log("Hello Green World!");
     }
 
-    public void Run2()
+    [Test]
+    public void DiRun2()
     {
         var services = new ServiceCollection()
             .AddTransient<ILogService, GreenLogService>()

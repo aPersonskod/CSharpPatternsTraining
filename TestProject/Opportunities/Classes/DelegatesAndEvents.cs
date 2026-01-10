@@ -1,6 +1,6 @@
-using CSharpPatternsTraining.Another.Model;
+using TestProject.Opportunities.Model;
 
-namespace CSharpPatternsTraining.Another.Opportunities;
+namespace TestProject.Opportunities.Classes;
 
 public delegate void Message(string message);
 

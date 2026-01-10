@@ -1,10 +1,11 @@
-﻿namespace CSharpPatternsTraining.Patterns;
+﻿namespace TestProject.Patterns;
 
-public class FactoryClass
+public class FactoryTest
 {
-    public string Result { get; } = "";
+    public string Result { get; private set; } = "";
 
-    public FactoryClass()
+    [Test]
+    public void TestFactory()
     {
         var countrysideHero = new Hero(new CountrysideManFactory());
         Result += countrysideHero.Name;

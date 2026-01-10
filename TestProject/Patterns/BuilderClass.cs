@@ -1,8 +1,9 @@
-namespace CSharpPatternsTraining.Patterns;
+namespace TestProject.Patterns;
 
-public class BuilderClass
+public class TestBuilder
 {
-    public BuilderClass()
+    [Test]
+    public void BuilderTest()
     {
         var director = new TvDirector();
         var saturnTv = director.CreateTv(new SaturnTvBuilder());

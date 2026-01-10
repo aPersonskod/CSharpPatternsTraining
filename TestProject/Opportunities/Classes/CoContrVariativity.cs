@@ -1,12 +1,13 @@
-using CSharpPatternsTraining.Another.Model;
+using TestProject.Opportunities.Model;
 
-namespace CSharpPatternsTraining.Another.Opportunities;
+namespace TestProject.Opportunities.Classes;
 
 public class CoContrVariativity
 {
     /// <summary>
     /// Covariativity can upcast generic interfaces
     /// </summary>
+    [Test]
     public void Covariativity()
     {
         ICovariantGarage<Car> garage = new CovariantGarage<Ford>(new Ford());
@@ -17,6 +18,7 @@ public class CoContrVariativity
     /// <summary>
     /// Contrvariativity can downcast generic interfaces
     /// </summary>
+    [Test]
     public void Contrvariativity()
     {
         IContrvariantGarage<FordMustang> fordGarage = new ContrvariantGarage<Ford>(new Ford());
@@ -24,6 +26,7 @@ public class CoContrVariativity
         fordGarage.SetNumber(new FordMustang());
     }
 
+    [Test]
     public void Invariativity()
     {
         // Garage can be only Car type, 

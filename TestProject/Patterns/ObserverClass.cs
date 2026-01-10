@@ -1,8 +1,9 @@
-﻿namespace CSharpPatternsTraining.Patterns;
+﻿namespace TestProject.Patterns;
 
-public class ObserverClass
+public class ObserverTest
 {
-    public ObserverClass()
+    [Test]
+    public void TestObserver()
     {
         var tgChanel = new TgChanel();
         var user1 = new User("Петя", tgChanel);
