@@ -1,3 +1,5 @@
+using System.Collections;
+
 namespace TestProject.Opportunities.Classes;
 
 public class ClosureOpportunityTest
