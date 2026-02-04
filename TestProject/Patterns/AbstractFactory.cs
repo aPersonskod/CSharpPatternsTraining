@@ -1,11 +1,13 @@
 ﻿namespace TestProject.Patterns;
 
-public class FactoryTest
+// используется при взаимодействии с обьектами одного интерфейса
+// (разные обьекты имеют одинаковые методы, передаю factory как инструкцию выполнения действий)
+public class AbstractFactoryTest
 {
     public string Result { get; private set; } = "";
 
     [Test]
-    public void TestFactory()
+    public void TestAbstractFactory()
     {
         var countrysideHero = new Hero(new CountrysideManFactory());
         Result += countrysideHero.Name;
@@ -19,6 +21,7 @@ public class FactoryTest
         Result += mysticHero.Name;
         Result += mysticHero.Run();
         Result += mysticHero.Hit();
+        Console.WriteLine(Result);
     }
 }
 

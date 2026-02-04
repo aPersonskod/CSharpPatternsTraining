@@ -120,4 +120,14 @@ public class TestTasks
             }
         }
     }
+
+    [Test]
+    public void Wtf()
+    {
+        int n = 25;
+        var x = Convert.ToString(n, 2);
+        var res = x.Count(l => l == '1');
+        Console.WriteLine(x);
+        Console.WriteLine(res);
+    }
 }
