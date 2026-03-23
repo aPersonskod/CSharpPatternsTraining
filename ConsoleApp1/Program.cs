@@ -16,5 +16,6 @@ Console.WriteLine("Not locked thread: \n");
 threadTesting.UseNotLockedThread();
 Console.WriteLine("Locked thread: \n");
 threadTesting.UseLockedThread();*/
+new TestThreadCalls().ThreadClassTest();
 
 #endregion
